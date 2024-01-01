@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url(./bg.jpg);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color:#a7d82e;
+            animation: bg 29s ease-in 1.5s ;
+        }h2{
+            font-size: 10em;
+        }
+  
+        #r{
+            display: inline-block;
+            position: absolute;
+            animation: year2 40s ease-in 2s ;
+            bottom: 37%;
+        }
+        h2 #r{
+            color:#f7e185;
+        
+        } 
+        #e{
+            display: inline-block;
+            color:#92e6e6;
+        } 
+        #y{
+            display: inline-block;
+            position: absolute;
+            bottom: -18%;
+            animation: year 35s ease-in 1.5s  ;
+    
+        }
+        #b{
+          position: absolute;
+                left: 57%;
+                bottom: 59%;
+          animation: year3 40s ease-in 2s;
+        
+          
+          
+        }
+       
+            @keyframes year{
+                0%
+                {
+                    color: #cb9bba;
+                    display: visible;
+    
+                }
+                25%{
+                    
+                    color: #fc3a52; 
+                    bottom: 35%;
+                    
+                
+                    
+         
+                    
+                }
+                50%{
+                    color: aqua;
+                }
+        }
+        @keyframes bg{
+            25%{
+                background-image: url(./bg2.gif);
+                background-size:cover;
+                background-position: 100% 100%;
+            }
+        }
+        @keyframes year3{
+            25%{
+                 bottom: 300%;
+            }
+        }
+        @keyframes year2{
+            0%
+            {
+                color: #cb9bba;
+
+            }
+            25%{
+                
+                color: #fc3a52; 
+                bottom:300%;
+             
+                
+                
+            }
+            50%{
+                color: aqua;
+                display: hidden;
+            }
+    }
+    </style>
+</head>
+<body>
+    
+    <img id="b" src="./b2.gif" width="100" height="200">
+    <h2>2<div id="e">0</div>2<div id="r">3</div><div id="y">4</div></h2>
+
+
+</body>
+</html>
